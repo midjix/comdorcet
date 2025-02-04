@@ -1,0 +1,12 @@
+{% extends 'globale.html.twig' %}
+
+{% block title %}QCM{% endblock %}
+
+{% block main %}
+    {% for question in qcm %}
+        <ul>
+            <li> {{question.titre}} </li>
+            <li> {{question.explication}} </li>
+        </ul>
+    {% endfor %}
+{% endblock %}
